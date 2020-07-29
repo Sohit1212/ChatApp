@@ -46,7 +46,7 @@ app.post("/messages", async (req,res) => {
         res.sendStatus(500);
         return console.error(error);
     } finally {
-        console.log('message post called');
+        //console.log('message post called');
     }
     
     
@@ -55,7 +55,7 @@ app.post("/messages", async (req,res) => {
 
 io.on('connection',(socket) => {
     
-    console.log('new user added');
+    //console.log('new user added');
 })
 
 
