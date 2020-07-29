@@ -29,7 +29,7 @@
     var socket = io();
 
     $(() => {
-        //console.log('loaded');
+        console.log('loaded');
         $("#send").click(()=>{
             var message = {name: $("#name").val(), message: $("#message").val()};
             postMessages(message);
